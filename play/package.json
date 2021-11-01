@@ -1,0 +1,14 @@
+{
+  "name": "@z-plus/play",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "dev": "vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vitejs/plugin-vue": "^1.9.4",
+    "vite": "^2.6.13"
+  }
+}

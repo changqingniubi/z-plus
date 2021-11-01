@@ -1,0 +1,19 @@
+/*
+ * @Description: 
+ * @Author: changqing
+ * @Date: 2021-11-01 16:14:08
+ * @LastEditTime: 2021-11-01 16:14:09
+ * @LastEditors: changqing
+ * @Usage: 
+ */
+import type { App, Plugin } from "vue"; // 只导入类型 而不是导入值
+
+// 类型必须导出否则生成不了.d.ts文件
+export type SFCWithInstall<T> = T & Plugin;
+
+export const withInstall = <T>(comp: T) => {
+  (comp as SFCWithInstall<T>).install = function (app: App) {
+    app.component((comp as any).name, comp);
+  };
+  return comp as SFCWithInstall<T>;
+};
