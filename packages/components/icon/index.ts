@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: changqing
  * @Date: 2021-11-01 15:58:34
- * @LastEditTime: 2021-11-01 16:30:32
+ * @LastEditTime: 2021-11-02 19:34:09
  * @LastEditors: changqing
  * @Usage: 
  */
@@ -14,4 +14,4 @@ export {
     ZIcon
 }
 export default ZIcon;// 导出组件
-export * from "./src/icon"; // 导出组件的属性类型
+//export * from "./src/icon"; // 导出组件的属性类型
